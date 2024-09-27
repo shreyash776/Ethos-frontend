@@ -1,0 +1,9 @@
+newmtl wire_red
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 1.0000 0.0000 0.0000  # Ambient reflectivity (Red color)
+	Kd 1.0000 0.0000 0.0000  # Diffuse reflectivity (Red color)
+	Ks 0.3500 0.3500 0.3500  # Specular reflectivity (can stay as-is or be customized)
