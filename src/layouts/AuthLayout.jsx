@@ -1,18 +1,22 @@
-import Navbar from '../components/AuthNavbar'; 
-import Footer from '../components/AuthFooter';
 import { Outlet } from "react-router-dom";
+import Footer from '../components/AuthFooter';
+import Navbar from '../components/AuthNavbar';
 
 const AuthLayout = () => {
   return (
-    <div>
-      <Navbar />
-      <main className='bg-black'>
+    <div className="h-screen flex flex-col">
+      <div>
+        <Navbar />
+      </div>
+      <main className="flex-grow">
         <Outlet />
       </main>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };
 
-
 export default AuthLayout;
+
